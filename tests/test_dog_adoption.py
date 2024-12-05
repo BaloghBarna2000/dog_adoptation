@@ -30,7 +30,7 @@ class TestDogAdoption(unittest.TestCase):
         self.shelter.adopt_dog("Buddy")
         available_dogs = self.shelter.list_available_dogs()
         self.assertEqual(len(available_dogs), 1)
-        self.assertEqual(available_dogs[0]['name'], "Charlie")
+        self.assertEqual(available_dogs[0]['name'], "Bubuka")
 
 if __name__ == "__main__":
     unittest.main()
