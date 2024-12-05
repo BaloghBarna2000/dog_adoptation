@@ -26,7 +26,7 @@ class TestDogAdoption(unittest.TestCase):
     # Integration Test: Kutyalista örökbefogadás után
     def test_list_available_dogs(self):
         self.shelter.add_dog("Buddy", 2, "Golden Retriever")
-        self.shelter.add_dog("Charlie", 3, "Labrador")
+        self.shelter.add_dog("Bubuka", 3, "Labrador")
         self.shelter.adopt_dog("Buddy")
         available_dogs = self.shelter.list_available_dogs()
         self.assertEqual(len(available_dogs), 1)
